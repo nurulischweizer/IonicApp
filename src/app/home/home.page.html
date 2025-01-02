@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> DK Rent </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,8 +11,41 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="slides">
+    <ng-container *ngFor="let item of items">
+      <ion-card>
+        <ion-card-content>
+          <img src="{{ item.image }}" alt="" width="100px" />
+          <b>{{ item.title }}</b></ion-card-content
+        >
+      </ion-card></ng-container
+    >
+  </div>
+
+  <div id="cards">
+    <!-- <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p> -->
+    <ion-card>
+      <ion-card-content>
+        <div class="menu-bar">
+          <div class="col">
+            <ion-icon name="home-outline" color="primary" size=""></ion-icon>
+            <small>Home</small>
+            <ion-ripple-effect></ion-ripple-effect>
+          </div>
+          <div class="col">
+            <ion-icon name="list-outline"></ion-icon> <small>Categories</small>
+          </div>
+          <div class="col">
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <small>Profile</small>
+          </div>
+          <div class="col">
+            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+            <small>More</small>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>
