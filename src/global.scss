@@ -16,6 +16,7 @@
 @import "@ionic/angular/css/normalize.css";
 @import "@ionic/angular/css/structure.css";
 @import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "@ionic/angular/css/padding.css";
@@ -23,20 +24,14 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
-@import "@ionic/angular/css/display.css";
 
 /**
- * Ionic Dark and High Contrast Palettes
+ * Ionic Dark Mode
  * -----------------------------------------------------
- * For more information, please see:
+ * For more info, please see:
  * https://ionicframework.com/docs/theming/dark-mode
- * https://ionicframework.com/docs/theming/high-contrast-mode
  */
 
-@import "@ionic/angular/css/palettes/dark.class.css";
-@import "@ionic/angular/css/palettes/high-contrast.class.css";
-@import "@ionic/angular/css/palettes/high-contrast-dark.class.css";
-/* (Optional) This is added to prevent the flashing that happens when toggling between palettes */
-ion-item {
-  --transition: none;
-}
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import '@ionic/angular/css/palettes/dark.system.css';
